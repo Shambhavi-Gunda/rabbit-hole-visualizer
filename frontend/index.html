@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Internet Rabbit Hole Galaxy</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#0b0b0b;
+color:white;
+text-align:center;
+}
+
+#controls{
+padding:20px;
+}
+
+#graph{
+width:100vw;
+height:90vh;
+}
+
+input{
+padding:10px;
+font-size:16px;
+}
+
+button{
+padding:10px 15px;
+font-size:16px;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="controls">
+
+<h1>Internet Rabbit Hole Galaxy</h1>
+
+<input id="topicInput" placeholder="Enter topic">
+<button onclick="startSearch()">Explore</button>
+
+</div>
+
+<div id="graph"></div>
+
+<script src="https://unpkg.com/3d-force-graph"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
