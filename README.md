@@ -1,18 +1,38 @@
-# 🌌 Internet Rabbit Hole Visualizer
+# 🌌 Internet Rabbit Hole Galaxy
 
-An interactive **3D visualization tool** that allows users to explore connections between topics.
-Users can enter a topic and see related concepts displayed as a **dynamic 3D network graph**.
-Clicking a node expands the graph further, allowing users to dive deeper into a "rabbit hole" of ideas.
+An interactive **3D visualization tool** that simulates how users fall into internet rabbit holes.
+
+Start with a single topic and watch it expand into a network of related ideas — just like how real-world algorithms guide curiosity.
 
 ---
 
-## 🚀 Features
+## 🚀 Demo
 
-* 🔍 **Topic Exploration** – Enter any topic and discover related concepts
-* 🌐 **3D Graph Visualization** – Topics are displayed as a rotating, zoomable 3D network
-* 🧠 **Expandable Nodes** – Click on nodes to explore deeper connections
-* ⚡ **Real-time Data Fetching** – Data is retrieved dynamically from an external API
-* 🎯 **Interactive Interface** – Users can rotate, zoom, and navigate the graph
+> Enter a topic → Explore connections → Click deeper → Watch the rabbit hole grow
+
+---
+
+## ✨ Features
+
+* 🌐 **3D Interactive Graph**
+
+  * Rotate, zoom, and explore topics in a dynamic space
+
+* 🧠 **Expandable Knowledge Network**
+
+  * Click any node to discover deeper related concepts
+
+* 📍 **User Path Tracking**
+
+  * Tracks how your curiosity evolves step-by-step
+
+* 🔮 **Prediction Engine**
+
+  * Suggests where your exploration might lead next
+
+* ⚡ **Real-Time API Integration**
+
+  * Fetches live related topics dynamically
 
 ---
 
@@ -23,7 +43,7 @@ Clicking a node expands the graph further, allowing users to dive deeper into a 
 * HTML
 * CSS
 * JavaScript
-* 3D Force Graph (3D network visualization)
+* 3D Force Graph (WebGL-based visualization)
 
 ### Backend
 
@@ -32,11 +52,11 @@ Clicking a node expands the graph further, allowing users to dive deeper into a 
 
 ### API
 
-* Datamuse API – used to fetch semantically related words
+* Datamuse API (semantic word relationships)
 
 ---
 
-## 📂 Project Structure
+## 🧩 Project Structure
 
 ```
 rabbit-hole-visualizer
@@ -46,7 +66,8 @@ rabbit-hole-visualizer
 │
 ├── frontend
 │   ├── index.html
-│   └── script.js
+│   ├── script.js
+│   └── style.css
 │
 ├── package.json
 └── README.md
@@ -54,64 +75,42 @@ rabbit-hole-visualizer
 
 ---
 
-## ⚙️ How to Run the Project
+## ⚙️ How to Run
 
-### 1️⃣ Clone the Repository
-
-```
-git clone https://github.com/Shambhavi-Gunda/rabbit-hole-visualizer.git
-```
-
-### 2️⃣ Navigate to the Project
-
-```
-cd rabbit-hole-visualizer
-```
-
-### 3️⃣ Install Dependencies
+### 1️⃣ Install dependencies
 
 ```
 npm install
 ```
 
-### 4️⃣ Start the Backend Server
+### 2️⃣ Start backend server
 
 ```
 node backend/server.js
 ```
 
-The server will start at:
+### 3️⃣ Run frontend
+
+Use Live Server OR:
 
 ```
-http://localhost:5000
+npx serve frontend
 ```
-
-### 5️⃣ Open the Frontend
-
-Open:
-
-```
-frontend/index.html
-```
-
-in your browser.
 
 ---
 
-## 🧩 How It Works
+## 🧠 How It Works
 
-1. User enters a topic.
-2. The frontend sends a request to the backend server.
-3. The backend calls the Datamuse API to fetch related words.
-4. The backend returns the related topics.
-5. The frontend visualizes them as a **3D network graph**.
-6. Clicking a node fetches more related topics and expands the graph.
+1. User enters a topic
+2. Frontend sends request to backend
+3. Backend fetches related concepts from API
+4. Data is visualized as a 3D graph
+5. Clicking nodes expands the network
+6. System tracks the exploration path
 
 ---
 
-## 📸 Example
-
-Example topic exploration:
+## 📸 Example Flow
 
 ```
 AI
@@ -122,22 +121,30 @@ AI
  └ Automation
 ```
 
-Users can continue clicking nodes to explore deeper connections.
-
 ---
 
 ## 🎯 Future Improvements
 
-* Add topic clustering
-* Use Reddit / YouTube data for real internet rabbit holes
-* Add AI-based recommendation of next topics
-* Save user exploration paths
+* 🔐 User login + saved exploration history
+* 📊 Most popular rabbit holes dashboard
+* 🧠 ML-based prediction system
+* 🌍 Multi-source data (Reddit, YouTube, Twitter)
 
 ---
 
 ## 👩‍💻 Author
 
 **Shambhavi Gunda**
+GitHub: https://github.com/Shambhavi-Gunda
 
-GitHub:
-https://github.com/Shambhavi-Gunda
+---
+
+## 💡 Inspiration
+
+Inspired by how platforms like YouTube, Reddit, and search engines guide users through chains of related content — often leading to unexpected deep dives.
+
+---
+
+## ⭐ If you like this project
+
+Give it a star ⭐ and share your rabbit hole!
