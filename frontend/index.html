@@ -12,21 +12,46 @@ margin:0;
 font-family:Arial;
 background:#0b0b0b;
 color:white;
+}
+
+/* FIXED TOP BAR */
+#controls{
+position:fixed;
+top:0;
+width:100%;
+background:black;
+padding:15px;
+z-index:9999;
 text-align:center;
 }
 
-#controls{
-padding:20px;
+/* PATH */
+#path{
+margin-top:10px;
+font-size:18px;
+color:#00ffcc;
+font-weight:bold;
 }
 
+/* PREDICTION */
+#prediction{
+margin-top:5px;
+font-size:16px;
+color:#ffd700;
+}
+
+/* GRAPH AREA */
 #graph{
+position:absolute;
+top:140px;
 width:100vw;
-height:90vh;
+height:calc(100vh - 140px);
 }
 
 input{
 padding:10px;
 font-size:16px;
+width:250px;
 }
 
 button{
@@ -43,10 +68,13 @@ cursor:pointer;
 
 <div id="controls">
 
-<h1>Internet Rabbit Hole Galaxy</h1>
+<h2>Internet Rabbit Hole Galaxy 🚀</h2>
 
 <input id="topicInput" placeholder="Enter topic">
 <button onclick="startSearch()">Explore</button>
+
+<div id="path">Path: (start exploring)</div>
+<div id="prediction">Prediction: ...</div>
 
 </div>
 
